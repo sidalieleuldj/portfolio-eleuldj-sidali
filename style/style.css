@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Spartan:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+  height: 55rem;
+  width: 100%;
+  background-image: url(../images/header-image.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  padding: 0.5rem 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+#first-name {
+  margin-right: 20rem;
+  font-size: xx-large;
+  color: white;
+}
+
+.text-header {
+  margin: 8rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#title-header {
+  font-weight: bolder;
+  font-size: 4rem;
+  color: white;
+  font-family: "Poppins";
+}
+
+.button-header {
+  display: flex;
+  align-items: center;
+}
+
+#discover {
+  background-color: blue;
+  border: 0px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: bolder;
+  margin: 2rem 1rem;
+}
+
+#contact-me {
+  background-color: transparent;
+  border: 0px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.main-container {
+  height: 25rem;
+  padding: 2rem;
+  background-color: rgb(227, 230, 235);
+}
+
+.text-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  justify-items: center;
+  padding: 2rem;
+}
+
+.text-container-sub1 {
+  display: flex;
+  flex-direction: column;
+}
+.text-container-sub {
+  display: flex;
+  flex-direction: column;
+}
+
+#para-container {
+  line-height: 2rem;
+}
+
+h3 {
+  color: rgb(25, 25, 175);
+}
+
+.main-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+#title-main-container2 {
+  font-size: 2rem;
+}
+
+.main-container3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container3-sub {
+  margin-bottom: 3rem;
+  border: 1px solid rgb(180, 180, 252);
+  padding: 1.5rem;
+  margin: 2rem;
+  line-height: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  color: white;
+  background-color: black;
+  padding: 3rem 3rem;
+  line-height: 2rem;
+}
+
+hr {
+  width: 13rem;
+  margin-top: 2rem;
+}
+
+span {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+input {
+  margin-top: 2rem;
+  height: 3rem;
+  width: 70rem;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+#send {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 10rem;
+  vertical-align: middle;
+}
+
+#powered {
+  font-weight: lighter;
+}
+
+.fixed {
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(38, 33, 112);
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .link-nav {
+    display: none;
+  }
+
+  #first-name {
+    display: none;
+  }
+
+  #title-header {
+    font-size: 2rem;
+  }
+
+  .text-container-sub {
+    display: none;
+  }
+
+  .text-container {
+    display: flex;
+  }
+
+  .main-container2 {
+    display: flex;
+    margin: 0%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .main-container3-sub img {
+   width: 30px;
+  }
+
+  .main-container3-sub p {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-container3-sub h1{
+    font-size: 1rem;
+  }
+
+  input {
+    height: 1rem;
+    width: 20rem;
+  }
+}
